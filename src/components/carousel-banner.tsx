@@ -1,10 +1,14 @@
 "use client";
 
+import { Project } from "@/typings";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import React from "react";
 import Image from "next/image";
-import { Project } from "@/typings";
+import ProjectTags from "./project-tags";
+import Tag, { TagVariant } from "./tag";
+import { title } from "process";
+import { Card } from "./ui/card";
 
 type Props = {
   projects: Project[];
@@ -19,10 +23,7 @@ function CarouselBanner({ projects }: Props) {
     <div ref={emblaRef} className="overflow-hidden relative cursor-pointer">
       <div className="flex">
         {projects.map((project, index) => (
-          <div
-            className="flex-full flex_[0_0_100%] relative max-h-screen"
-            key={index}
-          >
+          <div className="flex-full relative max-h-screen" key={index}>
             <Image
               src={`/assets/imgs/${project.background}`}
               className="w-full"
@@ -35,6 +36,18 @@ function CarouselBanner({ projects }: Props) {
                 {project.title}
               </h2>
               <p className="max-w-xl line-clamp-3">{project.description}</p>
+              {/* TODO error handler IDK WHY if i use it use client fails */}
+              {/* <ProjectTags project={project} variant={TagVariant.L} /> */}
+
+              {/* Put this inside component */}
+              <div className="flex gap-2">
+                {project.tags.map((tag, key) => (
+                  // Put this in another component ?
+                  <Card key={key} className={`px-6 py-2 rounded-xl`}>
+                    <p className={`text-lg`}>{tag}</p>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         ))}

@@ -1,10 +1,9 @@
-import CarouselBannerWrapper from "@/components/carousel-banner-wrapper";
+import CarouselBanner from "@/components/carousel-banner";
 import ProjectsCarousel from "@/components/projects-carousel";
 import { parseProjectsData } from "@/lib/parse-projects-data";
-
 export default async function Home() {
   const projects = parseProjectsData();
-  console.log("🚀 ~ Home ~ projects:", projects)
+  console.log("🚀 ~ Home ~ projects:", projects);
   const folders: string[] = projects.reduce(
     (folders: string[], project) =>
       project.folder && folders.indexOf(project.folder) === -1
@@ -15,8 +14,8 @@ export default async function Home() {
 
   return (
     <main className="">
-      <CarouselBannerWrapper />
-      <div className="flex flex-col space-x-2 xl:-mt-48 md:-mt-24 pb-10">
+      <CarouselBanner projects={projects} />
+      <div className="flex flex-col mx-2 xl:-mt-80 md:-mt-64">
         {folders.map((folder, index) => (
           <ProjectsCarousel
             key={index}

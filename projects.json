@@ -9,9 +9,21 @@
         "IMG20240413121022.jpg",
         "IMG20240413121110.jpg"
       ],
+      "features": [
+        {
+          "title": "features_title",
+          "description": "Features_description",
+          "imgs": [
+            "IMG20240413121022.jpg",
+            "IMG20240413121110.jpg"
+          ],
+          "videos": []
+        }
+      ],
       "tags": [
-        "tag1",
-        "tag2"
+        "React",
+        "Typescript",
+        "Redux"
       ],
       "bookmark": true,
       "folder": "project1_folder"
@@ -31,6 +43,66 @@
       ],
       "bookmark": true,
       "folder": "project1_folder"
+    },
+    {
+      "title": "Project 1",
+      "description": "description",
+      "videos": [],
+      "background": "IMG20240413104605.jpg",
+      "imgs": [
+        "IMG20240413121022.jpg",
+        "IMG20240413121110.jpg"
+      ],
+      "features": [
+        {
+          "title": "features_title",
+          "description": "Features_description",
+          "imgs": [
+            "IMG20240413121022.jpg",
+            "IMG20240413121110.jpg"
+          ],
+          "videos": []
+        }
+      ],
+      "tags": [
+        "React",
+        "Typescript",
+        "Redux"
+      ],
+      "bookmark": true,
+      "folder": "project2_folder"
+    },
+    {
+      "title": "Project 2",
+      "description": "description",
+      "videos": [],
+      "background": "IMG20240413121110.jpg",
+      "imgs": [
+        "IMG20240413121022.jpg",
+        "IMG20240413121110.jpg"
+      ],
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "bookmark": true,
+      "folder": "project2_folder"
+    },
+    {
+      "title": "Project 2",
+      "description": "description",
+      "videos": [],
+      "background": "IMG20240413121110.jpg",
+      "imgs": [
+        "IMG20240413121022.jpg",
+        "IMG20240413121110.jpg"
+      ],
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "bookmark": true,
+      "folder": "project3_folder"
     }
   ]
 }

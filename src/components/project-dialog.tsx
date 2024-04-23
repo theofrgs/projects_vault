@@ -1,55 +1,48 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Project } from "@/typings";
+import Image from "next/image";
+import ProjectTags from "./project-tags";
 
 type Props = { children: React.ReactNode; project: Project };
 
 async function ProjectDialog({ children, project }: Props) {
+  console.log("🚀 ~ ProjectDialog ~ project:", project);
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-[200%]">
-        <DialogHeader>
-          <DialogTitle>{project.title}</DialogTitle>
-          <DialogDescription>
-          {project.description}
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              defaultValue="Pedro Duarte"
-              className="col-span-3"
-            />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input
-              id="username"
-              defaultValue="@peduarte"
-              className="col-span-3"
-            />
+      <DialogContent className="min-w-[1000px] p-0 mt-10 bg-[#1A1C29]">
+        <div className="overflow-hidden relative cursor-pointer">
+          <div className="flex">
+            <div className="flex-full relative max-h-screen">
+              <Image
+                src={`/assets/imgs/${project.background}`}
+                className="w-full object-cover h-[40rem]"
+                alt={""}
+                width={1920}
+                height={1080}
+              />
+              <div className="hidden lg:inline absolute mt-0 top-0 z-20 pt-96 left-0 bg-transparent h-full w-full bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 space-y-5 text-white">
+                <h2 className="text-5xl font-bold max-w-xl z-50">
+                  {project.title}
+                </h2>
+                <p className="max-w-xl line-clamp-3">{project.description}</p>
+                <ProjectTags project={project}/>
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
           </div>
         </div>
-        <DialogFooter>
-          <Button type="submit">Save changes</Button>
-        </DialogFooter>
+        <div>
+          Features
+          {}
+        </div>
       </DialogContent>
     </Dialog>
   );
