@@ -22,8 +22,8 @@ const CarouselBanner = ({ projects }: Props) => {
     <div ref={emblaRef} className="overflow-hidden relative cursor-pointer">
       <div className="flex">
         {projects.map((project, index) => (
-          <ProjectDialog project={project} key={index}>
-            <div className="flex-full relative max-h-screen">
+          // <ProjectDialog project={project} key={index}>
+            <div className="flex-full relative max-h-screen" key={index}>
               <Image
                 src={`/assets/imgs/${project.background}`}
                 className="w-full"
@@ -51,7 +51,7 @@ const CarouselBanner = ({ projects }: Props) => {
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
             </div>
-          </ProjectDialog>
+          {/* </ProjectDialog> */}
         ))}
       </div>
     </div>
