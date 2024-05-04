@@ -9,6 +9,7 @@ import {
 import { Project } from "@/typings";
 import Image from "next/image";
 import ProjectTags from "./project-tags";
+import Link from "next/link";
 
 type Props = { children: React.ReactNode; project: Project };
 
@@ -16,7 +17,7 @@ async function ProjectDialog({ children, project }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="min-w-[1000px] p-0 mt-10 bg-[#1A1C29]">
+      <DialogContent className="min-w-[1000px] p-0 mt-10 bg-[#1A1C29] overflow-auto">
         <div className="overflow-hidden relative">
           <div className="flex">
             <div className="flex-full relative max-h-screen bg-red-500">
@@ -31,6 +32,14 @@ async function ProjectDialog({ children, project }: Props) {
                 <h2 className="text-5xl font-bold max-w-xl z-50">
                   {project.title}
                 </h2>
+                {project.url && (
+                  <div>
+                    <div
+                      className={`animate-pulse rounded-full bg-green-600 w-[1.5vh] h-[1.5vh]`}
+                    />
+                    <Link href={"online"}>{project.url}</Link>
+                  </div>
+                )}
               </div>
             </div>
             <div className="absolute h-full inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
@@ -45,7 +54,8 @@ async function ProjectDialog({ children, project }: Props) {
               <ProjectTags project={project} expanded={true} />
             </div>
           </div>
-          <div className="py-10">
+          {/* Features */}
+          <div className="pt-10">
             <h1 className="text-3xl font-semibold mb-4">Features</h1>
             {project.features?.map((feature, key) => (
               <div key={key} className="flex gap-2">
@@ -66,6 +76,25 @@ async function ProjectDialog({ children, project }: Props) {
                 </div>
               </div>
             ))}
+          </div>
+          {/* Gallery */}
+          <div className="py-10">
+            <h1 className="text-3xl font-semibold mb-4">Gallery</h1>
+            <div
+              className="flex gap-2 overflow-auto flex-wrap"
+              style={{ overflowY: "auto" }}
+            >
+              {project.imgs?.map((img, key) => (
+                <Image
+                  key={key}
+                  src={`/assets/imgs/${img}`}
+                  alt="Main app icon"
+                  width={1920 / 4}
+                  height={1080 / 4}
+                  className="cursor-pointer rounded-[20px] p-2 h-32 w-32 object-cover"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </DialogContent>
