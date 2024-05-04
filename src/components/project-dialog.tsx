@@ -12,7 +12,7 @@ function ProjectDialog({ children, project }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="min-w-[1000px] p-0 bg-[#1A1C29] overflow-y-auto max-h-screen mx-10 my-10">
+      <DialogContent className="min-w-[1000px] p-0 bg-[#1A1C29] overflow-y-auto max-h-screen mx-10 my-10 select-none">
         <div className="overflow-hidden relative">
           <div className="flex">
             <div className="flex-full relative max-h-screen bg-red-500">
@@ -27,6 +27,7 @@ function ProjectDialog({ children, project }: Props) {
                 <h2 className="text-5xl font-bold max-w-xl z-50">
                   {project.title}
                 </h2>
+                {project.date && <p className="italic">{project.date}</p>}
                 {project.url && (
                   <div>
                     <div

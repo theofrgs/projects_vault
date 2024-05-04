@@ -2,6 +2,7 @@
   "projects": [
     {
       "title": "SFSU Project: Photo Web-App",
+      "date": "November 2022",
       "description": "Fullstack web project, for class SFSU. The project is a photo web app where an user can register and publish post on his feed where other people can see it and coment it. I build the front and back. The front was in pure react and the back in nest js mongodb. Everything was in a container",
       "videos": [
         "https://youtu.be/oxV728_-nys?si=PGfC2qCQYQ1TcWAQ"

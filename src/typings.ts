@@ -7,6 +7,7 @@ export type Feature = {
 export type Project = {
   title: string;
   url?: string;
+  date?: string;
   background: string;
   description: string;
   folder: string;
