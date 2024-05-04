@@ -1,7 +1,7 @@
 export type Feature = {
   title: string;
   description: string;
-  videos: string;
+  video: string;
 };
 
 export type Project = {

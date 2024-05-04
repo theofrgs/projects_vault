@@ -13,6 +13,10 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'image.tmdb.org'
+      },
+      {
+        protocol: 'https',
+        hostname: 'youtu.be'
       }
     ]
   }
