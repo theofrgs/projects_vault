@@ -17,7 +17,7 @@ async function ProjectDialog({ children, project }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="min-w-[1000px] p-0 mt-10 bg-[#1A1C29] overflow-auto">
+      <DialogContent className="min-w-[1000px] p-0 bg-[#1A1C29] overflow-y-auto max-h-screen mx-10 my-10">
         <div className="overflow-hidden relative">
           <div className="flex">
             <div className="flex-full relative max-h-screen bg-red-500">
@@ -44,7 +44,7 @@ async function ProjectDialog({ children, project }: Props) {
             </div>
             <div className="absolute h-full inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
           </div>
-        </div>{" "}
+        </div>
         <div className="z-20 h-full w-full px-10 space-y-5 text-white">
           <div className="flex flex-row justify-between max-h-24">
             <div className="max-w-xl">
@@ -81,7 +81,7 @@ async function ProjectDialog({ children, project }: Props) {
           <div className="py-10">
             <h1 className="text-3xl font-semibold mb-4">Gallery</h1>
             <div
-              className="flex gap-2 overflow-auto flex-wrap"
+              className="flex gap-4 justify-between overflow-auto flex-wrap"
               style={{ overflowY: "auto" }}
             >
               {project.imgs?.map((img, key) => (
