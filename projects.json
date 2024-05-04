@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Project 1",
-      "description": "description",
+      "description": "Description project 1Description project 1Description project 1Description project 1Description project 1",
       "videos": [],
       "background": "IMG20240413104605.jpg",
       "imgs": [
@@ -13,17 +13,21 @@
         {
           "title": "features_title",
           "description": "Features_description",
-          "imgs": [
-            "IMG20240413121022.jpg",
-            "IMG20240413121110.jpg"
-          ],
-          "videos": []
+          "videos": "IMG20240413121022.jpg"
         }
       ],
       "tags": [
         "React",
         "Typescript",
-        "Redux"
+        "Redux",
+        "Typescript",
+        "Redux",
+        "Typescript",
+        "Redux",
+        "Redux",
+        "Typescript",
+        "Redux",
+        "Typescript"
       ],
       "bookmark": true,
       "folder": "project1_folder"
@@ -57,11 +61,7 @@
         {
           "title": "features_title",
           "description": "Features_description",
-          "imgs": [
-            "IMG20240413121022.jpg",
-            "IMG20240413121110.jpg"
-          ],
-          "videos": []
+          "videos": "IMG20240413121022.jpg"
         }
       ],
       "tags": [

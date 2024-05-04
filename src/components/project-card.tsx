@@ -9,9 +9,11 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <ProjectDialog project={project}>
       <div className="relative flex-shrink-0 cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg">
-        <div className="absolute z-20 bottom-5 left-5 flex flex-col gap-2">
+        <div className="absolute z-20 bottom-5 left-5 flex flex-col gap-2 overflow-hidden">
           <h2 className="font-semibold">{project.title}</h2>
-          <ProjectTags project={project} variant={TagVariant.S} />
+          <div className=" max-w-xs">
+            <ProjectTags project={project} variant={TagVariant.S} />
+          </div>
         </div>
         <Image
           className="w-fit lg:min-w-[400px] h-56 object-cover object-center shadow-md shadow-gray-900 drop-shadow-xl rounded-sm"
