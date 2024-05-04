@@ -1,3 +1,4 @@
+import { Project } from "@/typings";
 import fs from "fs";
 
 export function parseProjectsData(): Project[] {
