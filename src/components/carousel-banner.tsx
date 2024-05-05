@@ -32,7 +32,7 @@ const CarouselBanner = ({ projects }: Props) => {
               height={1080}
             />
             <div className="hidden lg:inline absolute mt-0 top-0 z-20 pt-[300px] 2xl:pt-[450px] left-0 bg-transparent h-full w-full bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 space-y-5 text-white">
-              <h2 className="text-5xl font-bold max-w-xl z-50">
+              <h2 className="text-5xl font-bold max-w-xl z-30">
                 {project.title}
               </h2>
               <p className="max-w-xl line-clamp-3">{project.description}</p>

@@ -13,7 +13,7 @@ function ProjectDialog({ children, project }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className=" max-w-[350px] sm:min-w-[1000px] p-0 bg-[#1A1C29] overflow-y-auto max-h-screen sm:mx-10 my-10 select-none">
+      <DialogContent className="max-w-[350px] sm:min-w-[1000px] p-0 bg-[#1A1C29] overflow-y-auto max-h-screen sm:mx-10 my-10">
         <div className="overflow-hidden relative">
           <div className="flex">
             <div className="flex-full relative max-h-screen">
@@ -25,11 +25,13 @@ function ProjectDialog({ children, project }: Props) {
                 height={1080}
               />
               <div
-                className={`absolute mt-0 top-0 z-20 ${
-                  project.url ? "pt-[200px] sm:pt-[400px] " : "pt-[250px] sm:pt-[450px]"
+                className={`absolute mt-0 top-0 z-10 select-none ${
+                  project.url
+                    ? "pt-[200px] sm:pt-[400px] "
+                    : "pt-[250px] sm:pt-[450px]"
                 } left-0 bg-transparent h-full w-full bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 space-y-5 text-white`}
               >
-                <h2 className="text-lg sm:text-5xl font-bold max-w-xl z-50">
+                <h2 className="text-lg sm:text-5xl font-bold max-w-xl ">
                   {project.title}
                 </h2>
                 {project.date && (
@@ -54,7 +56,7 @@ function ProjectDialog({ children, project }: Props) {
             <div className="absolute h-full inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
           </div>
         </div>
-        <div className="z-20 h-full w-full px-10 space-y-5 text-white">
+        <div className=" h-full w-full px-10 space-y-5 text-white">
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-0 justify-between ">
             <div className="max-w-xl">
               <p className="text-[12px] sm:text-base">{project.description}</p>
@@ -80,7 +82,7 @@ function ProjectDialog({ children, project }: Props) {
                   />
                 </Link>
                 <div className="flex flex-col gap-2 py-2">
-                  <h2 className="text-base sm:text-xl font-bold max-w-xl z-50">
+                  <h2 className="text-base sm:text-xl font-bold max-w-xl">
                     {feature.title}
                   </h2>
                   <p className="max-w-xl text-[10px] sm:text-sm">
@@ -125,7 +127,7 @@ function ProjectDialog({ children, project }: Props) {
                       height={1080 / 4}
                       className="cursor-pointer rounded-[20px] p-2 h-32 w-32 object-cover"
                     />
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
                       <div className="rounded-xl bg-gray-900/50 p-2">
                         <FaPlay color="red" />
                       </div>
