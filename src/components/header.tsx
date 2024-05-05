@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { ThemeToggler } from "./theme-toggler";
+import { AiFillGithub } from "react-icons/ai";
+import { Button } from "./ui/button";
 
 function Header() {
   return (
@@ -17,6 +19,22 @@ function Header() {
       </Link>
       <div className="flex space-x-2">
         <ThemeToggler />
+        <Link href="https://github.com/theofrgs">
+          <Button variant="outline" size="icon" className="p-1">
+            <AiFillGithub className="text-white h-full w-full" />
+          </Button>
+        </Link>
+        <Link href="https://www.malt.fr/profile/theofargeas?overview">
+          <Button variant="outline" size="icon" className="p-1">
+            <Image
+              src="/assets/imgs/malt-icon.png"
+              alt="Malt icon"
+              width={800}
+              height={800}
+              className="h-full w-full"
+            />
+          </Button>
+        </Link>
       </div>
     </header>
   );
