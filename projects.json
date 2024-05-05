@@ -28,6 +28,35 @@
       ],
       "bookmark": true,
       "folder": "SFSU 2023"
+    },
+    {
+      "title": "disney Clone",
+      "date": "November 2022",
+      "description": "Fullstack web project, for class SFSU. The project is a photo web app where an user can register and publish post on his feed where other people can see it and coment it. I build the front and back. The front was in pure react and the back in nest js mongodb. Everything was in a container",
+      "videos": [
+        "https://youtu.be/oxV728_-nys?si=PGfC2qCQYQ1TcWAQ"
+      ],
+      "background": "Photo Web-App.png",
+      "imgs": [
+        "Photo Web-App.png"
+      ],
+      "features": [
+        {
+          "title": "Project presentation",
+          "description": "A 10-minute video showcasing the project presentation.",
+          "video": "https://youtu.be/oxV728_-nys?si=PGfC2qCQYQ1TcWAQ"
+        }
+      ],
+      "tags": [
+        "React",
+        "Typescript",
+        "Docker",
+        "NestJs",
+        "NoSql",
+        "MongoDB"
+      ],
+      "bookmark": true,
+      "folder": "SFSU 2023"
     }
   ]
 }
