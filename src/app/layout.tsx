@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Théo Projects Vault",
+  title: "@theofrgs",
   description: "Théo Fargeas project vault",
 };
 
