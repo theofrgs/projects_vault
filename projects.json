@@ -5,7 +5,7 @@
       "date": "November 2022",
       "description": "Fullstack web project, for class SFSU. The project is a photo web app where an user can register and publish post on his feed where other people can see it and coment it. I build the front and back. The front was in pure react and the back in nest js mongodb. Everything was in a container",
       "videos": [
-        "https://youtu.be/oxV728_-nys?si=PGfC2qCQYQ1TcWAQ"
+        "https://youtu.be/oxV728_-nys"
       ],
       "background": "Photo Web-App.png",
       "imgs": [
@@ -15,7 +15,7 @@
         {
           "title": "Project presentation",
           "description": "A 10-minute video showcasing the project presentation.",
-          "video": "https://youtu.be/oxV728_-nys?si=PGfC2qCQYQ1TcWAQ"
+          "video": "https://youtu.be/oxV728_-nys"
         }
       ],
       "tags": [
@@ -33,12 +33,20 @@
       "title": "Disney clone NextJs",
       "date": "March 2024",
       "description": "The project is a clone of Disney + build in NextJs with TMDB.",
-      "videos": [],
-      "background": "Photo Disney-Clone.png",
+      "videos": [
+        "https://youtu.be/BM6Yque2GC8"
+      ],
+      "background": "background Disney-Clone.png",
       "imgs": [
         "Photo Disney-Clone.png"
       ],
-      "features": [],
+      "features": [
+        {
+          "title": "Project presentation",
+          "description": "A 10-minute video showcasing the project presentation.",
+          "video": "https://youtu.be/BM6Yque2GC8"
+        }
+      ],
       "tags": [
         "React",
         "Typescript",

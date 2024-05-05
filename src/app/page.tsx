@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <main>
       <CarouselBanner projects={projects} />
-      <div className="flex flex-col mx-2 xl:-mt-80 md:-mt-64">
+      <div className="flex flex-col mx-2 -mt-40 sm:-mt-5 xl:-mt-5 2xl:-mt-80 ">
         {folders.map((folder, index) => (
           <ProjectsCarousel
             key={index}
