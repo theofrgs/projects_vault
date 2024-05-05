@@ -9,7 +9,6 @@ import { FaPlay } from "react-icons/fa";
 type Props = { children: React.ReactNode; project: Project };
 
 function ProjectDialog({ children, project }: Props) {
-  console.log(project.url);
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>

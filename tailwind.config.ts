@@ -18,8 +18,14 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "h-sm": { raw: "(min-height: 480px)" },
+        "h-md": { raw: "(min-height: 600px)" },
+        "h-lg": { raw: "(min-height: 800px)" },
+        "h-xl": { raw: "(min-height: 1000px)" },
+      },
       flex: {
-        full: "0 0 100%"
+        full: "0 0 100%",
       },
       colors: {
         border: "hsl(var(--border))",
