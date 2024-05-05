@@ -17,7 +17,7 @@ async function Tag({ title, variant = TagVariant.M }: Props) {
       } py-${TagVariant.S === variant ? "1" : "2"} rounded-xl`}
     >
       <p
-        className={` text-${
+        className={`text-[8px] sm:text-${
           TagVariant.L === variant
             ? "lg"
             : TagVariant.S === variant

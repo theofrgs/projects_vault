@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ThemeToggler } from "./theme-toggler";
 import { AiFillGithub } from "react-icons/ai";
 import { Button } from "./ui/button";
+import { useTheme } from "next-themes";
 
 function Header() {
   return (
@@ -13,19 +14,27 @@ function Header() {
           src="https://media.licdn.com/dms/image/D5603AQGfjxh6bt3R5g/profile-displayphoto-shrink_400_400/0/1680613624537?e=1717027200&v=beta&t=udteSDyw9nOF2nuULwJGefaeANQw5yAsVZKyYMcTXzI"
           alt="Main app icon"
           width={120}
-          height={100}
-          className="cursor-pointer rounded-[120px] p-2"
+          height={120}
+          className="cursor-pointer rounded-[120px] p-2 w-14 h-14 md:w-32 md:h-32"
         />
       </Link>
       <div className="flex space-x-2">
-        <ThemeToggler />
+        {/* <ThemeToggler /> */}
         <Link href="https://github.com/theofrgs">
-          <Button variant="outline" size="icon" className="p-1">
-            <AiFillGithub className="text-white h-full w-full" />
+          <Button
+            variant={"outline"}
+            size="icon"
+            className="p-1 h-8 w-8 md:w-10 md:h-10"
+          >
+            <AiFillGithub className="h-full w-full" color="white" />
           </Button>
         </Link>
         <Link href="https://www.malt.fr/profile/theofargeas?overview">
-          <Button variant="outline" size="icon" className="p-1">
+          <Button
+            variant={"outline"}
+            size="icon"
+            className="p-1 h-8 w-8 md:w-10 md:h-10"
+          >
             <Image
               src="/assets/imgs/malt-icon.png"
               alt="Malt icon"

@@ -10,10 +10,10 @@ type Props = {
 function ProjectsCarousel({ title, projects }: Props) {
   return (
     <div className="z-20">
-      <h2 className="text-xl font-bold px-10 py-2">{title}</h2>
+      <h2 className="text-base sm:text-xl font-bold px-5 lg:px-10 py-1 sm:py-2">{title}</h2>
       <div
         className={cn(
-          "flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide"
+          "flex space-x-4 overflow-scroll px-5 lg:px-10 py-2 sm:py-5 scrollbar-hide"
         )}
       >
         {projects.map((project, index) => (
