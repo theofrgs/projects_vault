@@ -17,6 +17,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'youtu.be'
+      },
+      {
+        protocol: 'https',
+        hostname: 'youtube.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com'
       }
     ]
   }

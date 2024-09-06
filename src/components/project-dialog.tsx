@@ -8,6 +8,13 @@ import { FaPlay } from "react-icons/fa";
 
 type Props = { children: React.ReactNode; project: Project };
 
+function getYouTubeVideoId(url: string): string | null {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/|v\/))([a-zA-Z0-9_-]{11})/
+  );
+  return match ? match[1] : null;
+}
+
 function ProjectDialog({ children, project }: Props) {
   return (
     <Dialog>
@@ -73,7 +80,9 @@ function ProjectDialog({ children, project }: Props) {
               <div key={key} className="flex gap-2">
                 <Link href={feature.video} passHref>
                   <Image
-                    src={feature.video}
+                    src={`https://img.youtube.com/vi/${getYouTubeVideoId(
+                      feature.video
+                    )}/default.jpg`}
                     alt="YouTube Preview"
                     width={1920 / 4}
                     height={1080 / 4}
@@ -119,8 +128,9 @@ function ProjectDialog({ children, project }: Props) {
                 <Link href={video} passHref key={key}>
                   <div className="flex justify-center relative">
                     <Image
-                      // TODO should be preview
-                      src={`/assets/imgs/${project.background}`}
+                      src={`https://img.youtube.com/vi/${getYouTubeVideoId(
+                        video
+                      )}/default.jpg`}
                       alt="YouTube Preview"
                       width={1920 / 4}
                       height={1080 / 4}

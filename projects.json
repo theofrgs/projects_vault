@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "title": "Spotify clone React Native",
+      "date": "7 Sept 2024",
+      "description": "The project is a clone of Spotify + build in React Native. You cannot interact with the app.",
+      "videos": [
+        "https://youtube.com/shorts/K2uHMUFAIMo"
+      ],
+      "background": "spotify_clone_home_bg.png",
+      "imgs": [
+        "spotify_clone_home.png",
+        "spotify_clone_home_bg.png"
+      ],
+      "features": [
+        {
+          "title": "Home Page",
+          "description": "Short video home page",
+          "video": "https://youtube.com/shorts/K2uHMUFAIMo"
+        }
+      ],
+      "tags": [
+        "ReactNative",
+        "Typescript",
+        "NativeWind",
+        "I18n",
+        "GluestackUi"
+      ],
+      "bookmark": true,
+      "folder": "Side Projects"
+    },
+    {
       "title": "SFSU Project: Photo Web-App",
       "date": "November 2022",
       "description": "Fullstack web project, for class SFSU. The project is a photo web app where an user can register and publish post on his feed where other people can see it and coment it. I build the front and back. The front was in pure react and the back in nest js mongodb. Everything was in a container",
@@ -57,6 +86,32 @@
       ],
       "bookmark": true,
       "folder": "Side Projects"
+    },
+    {
+      "title": "Clothe First IOS app",
+      "date": "October 2022",
+      "description": "The project is a small clothe order app + build in SwiftUI. You can choose an article, type the number of item you want and get the total price of the bag",
+      "videos": [
+        "https://youtube.com/shorts/X1L5Cgv490g"
+      ],
+      "background": "clothe_app_ios_bg.png",
+      "imgs": [
+        "clothe_app_ios_bg.png",
+        "clothe_app_ios.png"
+      ],
+      "features": [
+        {
+          "title": "Project preview",
+          "description": "A short preview of the app",
+          "video": "https://youtube.com/shorts/X1L5Cgv490g"
+        }
+      ],
+      "tags": [
+        "SwiftUI",
+        "IOS"
+      ],
+      "bookmark": true,
+      "folder": "SFSU 2023"
     }
   ]
 }
