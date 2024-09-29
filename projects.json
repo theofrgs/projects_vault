@@ -30,6 +30,33 @@
       "folder": "Side Projects"
     },
     {
+      "title": "Linkedin Tinder React Native",
+      "date": "29 Sept 2024",
+      "description": "The project is to build a mobile app like tinder but for human resource",
+      "videos": [
+        "https://youtu.be/WRkj4VdEgss"
+      ],
+      "background": "background Tinder Linkedin.png",
+      "imgs": [
+        "background Tinder Linkedin.png",
+        "Tinder linkedin profile.png"
+      ],
+      "features": [
+        {
+          "title": "Project presentation",
+          "description": "Short presentation of the app",
+          "video": "https://youtu.be/WRkj4VdEgss"
+        }
+      ],
+      "tags": [
+        "ReactNative",
+        "Typescript",
+        "TailwindCss"
+      ],
+      "bookmark": true,
+      "folder": "Side Projects"
+    },
+    {
       "title": "SFSU Project: Photo Web-App",
       "date": "November 2022",
       "description": "Fullstack web project, for class SFSU. The project is a photo web app where an user can register and publish post on his feed where other people can see it and coment it. I build the front and back. The front was in pure react and the back in nest js mongodb. Everything was in a container",
