@@ -5,11 +5,11 @@
       "date": "10 October 2024",
       "description": "This project is a SAAS for content creator. Severals tools will be available, including image grouping, content tagging and cloud storage",
       "videos": [],
-      "background": "nova-landingPage.jpeg",
+      "background": "nova-landingPage.png",
       "imgs": [
-        "nova-loginPage.jpeg",
-        "nova-registerPage.jpeg",
-        "nova-landingPage.jpeg"
+        "nova-loginPage.png",
+        "nova-registerPage.png",
+        "nova-landingPage.png"
       ],
       "tags": [
         "NextJs",
