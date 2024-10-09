@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "title": "Nova",
+      "date": "10 October 2024",
+      "description": "This project is a SAAS for content creator. Severals tools will be available, including image grouping, content tagging and cloud storage",
+      "videos": [],
+      "background": "nova-landingPage.jpeg",
+      "imgs": [
+        "nova-loginPage.jpeg",
+        "nova-registerPage.jpeg",
+        "nova-landingPage.jpeg"
+      ],
+      "tags": [
+        "NextJs",
+        "Typescript",
+        "TailwindCss",
+        "NestJs",
+        "ShadcnUi",
+        "Docker"
+      ],
+      "bookmark": true,
+      "folder": "Side Projects"
+    },
+    {
       "title": "Spotify clone React Native",
       "date": "7 Sept 2024",
       "description": "The project is a clone of Spotify + build in React Native. You cannot interact with the app.",
